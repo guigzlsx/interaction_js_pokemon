@@ -1,0 +1,239 @@
+@import url(reset.css);
+@import url(search.css);
+@import url(produit.css);
+@import url(panier.css);
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000;
+  background-color: #fff5ee;
+  overflow-x: hidden;
+}
+
+
+
+h1 {
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+h2 {
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+main {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.titre {
+  padding: 20px 0;
+  padding-left: 20px;
+}
+
+.titre h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5em;
+  color: #333;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  background-color: #ffcb05;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
+}
+
+.logo img {
+  height: 50px;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  font-size: 18px;
+  display: inline;
+  margin: 0 1em;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #ff6f00;
+}
+
+.nav-links a:hover {
+  color: #ff3d00;
+}
+
+#challenge-3-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+}
+
+#challenge-3-1 div {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+#searchInput {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  flex-grow: 1;
+}
+
+#searchButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+#searchButton:hover {
+  background-color: #0056b3;
+}
+
+#searchList {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Caroussel de pokemon */
+
+.center {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+.wrapper {
+  display: flex;
+  grid-gap: 1em;
+  overflow: hidden;
+  width: 55em;
+}
+
+.wrapper > .inner {
+  display: flex;
+  grid-gap: 1em;
+  transition: all 1s ease-in-out;
+}
+
+.card {
+  border-radius: 0.5em;
+  background-color: white;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+}
+
+.card > img {
+  border-top-right-radius: inherit;
+  border-top-left-radius: inherit;
+  display: block;
+  width: 17.5em;
+}
+
+.card > .content {
+  background: #363b81;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  padding: 1em;
+  text-align: center;
+}
+
+.card > .content > h1,
+.card > .content > h3 {
+  margin: 0.35em 0;
+}
+
+.card > .content > h1 {
+  color: #fff;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.card > .content > h3 {
+  color: #ccc;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.map {
+  margin-top: 1em;
+}
+
+.map > button {
+  all: unset;
+  background: #112a58;
+  cursor: pointer;
+  margin: 0 0.125em;
+  position: relative;
+  user-select: none;
+  border-radius: 100%;
+  height: 1em;
+  width: 1em;
+}
+
+.map > button.active::after {
+  background: #001d38;
+  content: "";
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  border-radius: 100%;
+  height: 0.5em;
+  width: 0.5em;
+}
+
+footer {
+  background-color: #363b81;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar a {
+    margin-bottom: 10px;
+  }
+
+  .logo img {
+    height: 20px;
+  }
+}
